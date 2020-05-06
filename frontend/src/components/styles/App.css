@@ -1,0 +1,71 @@
+.k{
+  display:flex;
+  justify-content:center;
+}
+
+.w{
+width: 100% !important;
+
+}
+
+.f{
+font-family: 'Josefin Sans', sans-serif;
+font-size:20px;
+
+}
+
+
+
+
+.sel{
+  text-align:center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance:none;
+  background: white;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 15px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 2rem;
+  padding: 1rem;
+  padding-right: 2rem;
+}
+
+
+.bgrow{
+max-width: 100.8%;
+
+}
+
+
+.relg{
+position: relative; height: revert;
+}
+
+
+.car{
+width:auto !important;
+height:auto !important;
+min-width:12rem;
+}
+
+.tpad{
+
+margin-top:5%;
+}
+
+.pad{
+text-align:center;
+    padding-top: 7%;
+    padding-right: 17%;
+    padding-left: 17%;
+    padding-bottom: 7%;
+
+}
+
+.sw{
+width:22rem;
+}

@@ -1,0 +1,99 @@
+{% load static %}
+<html lang="en">
+<head>
+
+    <title>Coronography</title>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster Two" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<style>
+    .k{
+        width:900px !important;height:500px !important
+    }
+    .fa-spin {
+        -webkit-animation: fa-spin 5s infinite linear !important;
+        animation: fa-spin 5s infinite linear !important;
+    }
+
+    @media(max-width:1100px){
+
+        .dis{
+            display:none;
+        }
+
+    }
+
+</style>
+<body class="bg-light">
+{% load static %}
+    <div class="text-center bg-primary" style=" height:200px; width:100%">
+        <img class="dis" style="padding:30px; text-align:center; height:auto; max-height:150px; width:auto; max-width:150px;" src="{% static 'dt.png' %}">
+        <img class="dis" style="padding:30px; text-align:center; height:150px; width:150px;" src="{% static 'qua.png' %}">
+        <img class="fa-spin" style="padding:30px; text-align:center; height:200px; width:200px;" src="{% static 'icon1.png' %}">
+        <img class="dis" style="padding:30px; text-align:center; height:150px; width:150px;" src="{% static 'soap.png' %}">
+        <img class="dis" style="padding:30px; text-align:center; height:150px; width:150px;" src="{% static 'wash.png' %}">
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="/">Coronography</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">What is Corona?</a>
+            </li>
+            <li class="nav-item">
+              <a href="/guide/" class="nav-link">Government Guidelines</a>
+            </li>
+            <li class="border thick rounded border-danger" style="font-size:20px">
+              <a href="/precautions/" class="nav-link text-danger">Precautions <i class="fa-warning fas"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="/country/" class="nav-link">Show Country Wise <i class="fa-world fas"></i></a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div id="app" style="width: 100%">
+
+    </div>
+    <script src='{%static  "frontend/main.js"%}'></script>
+
+    <div class="bg-dark" style=" height:200px; width:100%"><br><br>
+    <div class="nav-link text-center bg-dark" style="color:white;">
+
+    </div>
+    <h3 style="color:white; font-family:Lobster">Resource</h3>
+<small style="color:white;">Worldometer</small>
+
+</div>
+
+
+
+
+</body>
+</html>
